@@ -30,5 +30,7 @@ jobs:
           path: |
             ~/.gradle/caches
             ~/.gradle/wrapper
+      - name : add execute permission
+        run : chmod +x ./gradlew
 
       - run: ./gradlew test
