@@ -9,8 +9,8 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class primeTest {
     @Test
     public void testGetNewPrime() {
-        NewPrime newPrimeController = new NewPrime();
-        String result = newPrimeController.getNewPrime();
+        Prime newPrimeController = new Prime();
+        String result = newPrimeController.getPrime();
         // Vérifiez que la chaîne renvoyée est un nombre premier probable
         BigInteger bigIntegerResult = new BigInteger(result);
         boolean isProbablePrime = bigIntegerResult.isProbablePrime(100);
@@ -20,8 +20,8 @@ public class primeTest {
 
     @Test
     public void testGetNewPrimeBitLength() {
-        NewPrime newPrimeController = new NewPrime();
-        String result = newPrimeController.getNewPrime();
+        Prime newPrimeController = new Prime();
+        String result = newPrimeController.getPrime();
 
         // Vérifiez que la longueur du nombre premier est proche de 10,000 bits
         BigInteger bigIntegerResult = new BigInteger(result);
